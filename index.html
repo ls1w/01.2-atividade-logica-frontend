@@ -21,7 +21,10 @@
                     <div class="row">
                         <div class="col">
                             <label for="tempo" class="form-lable fw-bold text-light">TEMPO</label>
-                            <input type="number" name="tempo" id="tempo" class="form-control" placeholder="Insira tempo em hora: ">
+                            <div class="input-group mb-3">
+                                <input type="number" name="tempo" id="tempo" class="form-control" placeholder="Insira o tempo: ">
+                                <span class="input-group-text" id="addon-horas">H</span>
+                            </div>
                         </div>
                     </div>
 
@@ -29,7 +32,10 @@
                     <div class="row">
                         <div class="col">
                             <label for="velocidade" class="form-lable fw-bold text-light">VELOCIDADE</label>
-                            <input type="number" name="velocidade" id="velocidade" class="form-control" placeholder="Insira o km/h: ">
+                            <div class="input-group mb-3">
+                                <input type="number" name="velocidade" id="velocidade" class="form-control" placeholder="Insira a velocidade: "> 
+                                <span class="input-group-text" id="addon-km-h">KM/H</span>
+                            </div>
                         </div>
                     </div>
 
@@ -58,7 +64,7 @@
                     
 
                     <!-- BOTÃO CALCULAR E LIMPAR -->
-                    <div class="row">
+                    <div class="row gap-0 column-gap-5">
                         <!-- BOTÃO CALCULAR -->
                         <div class="col">
                             <button class="btn btn-primary mt-2" name="btn-calcula" id="btn-calcular" onclick="calcular()">
