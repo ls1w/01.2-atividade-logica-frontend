@@ -35,6 +35,6 @@ function calcularConsumo(){
 
     consumo = (distancia / 12);
 
-    document.querySelector('#consumo').innerHTML = (consumo + ' KM/L')
+    document.querySelector('#consumo').innerHTML = (consumo.toFixed(2) + ' KM/L')
     return consumo
 }
